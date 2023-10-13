@@ -13,7 +13,9 @@ user.name=***
 user.email=***
 credential.http://git.roadtel.top.provider=***
 credential.http://service.haoyitec.cn:50006.provider=***
-http.https://github.com.proxy=socks5://127.0.0.1:1081 // 该配置指定了在访问https://github.com时使用的代理服务器127.0.0.1:1081，所有对https://github.com的请求都将通过代理服务器127.0.0.1:1081进行连接
+http.https://github.com.proxy=socks5://127.0.0.1:1081
+// 最后一行配置指定了在访问https://github.com时使用的代理服务器127.0.0.1:1081，
+所有对https://github.com的请求都将通过代理服务器127.0.0.1:1081进行连接
 
 2.删除github代理 命令： git config --global --unset http.https://github.com.proxy
 删除后即可clone
