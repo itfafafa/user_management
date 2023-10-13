@@ -1,0 +1,183 @@
+html,
+body {
+  background-color: #aaa;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  border: 1px solid rgb(132, 131, 131);
+  width: 12px;
+  height: 12px;
+  margin-top: 0;
+  margin-right: 0 !important;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #ccc;
+  background-size: contain;
+  background-image: url(../img/icon-check.png);
+}
+
+.outbox {
+  position: relative;
+  width: 391px;
+  margin: 40px auto;
+  padding: 10px;
+  background-color: #f7f7f7;
+}
+
+input {
+  outline: none;
+}
+
+.headeDiv {
+  margin-bottom: 8px;
+  border-bottom: 5px solid #ccc;
+}
+
+.tableTitile {
+  display: inline-block;
+}
+
+.navDiv {
+  height: 25px;
+}
+
+.seachInp {
+  padding-left: 2px;
+}
+
+.seach {
+  float: right;
+}
+
+.userTable {
+  border-collapse: collapse;
+}
+
+.trHeader {
+  background-color: #ddd;
+}
+
+.trBody {
+  height: 30px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.trBody:nth-child(2n-1) {
+  background-color: #f9f9f9;
+}
+
+.trBody:hover {
+  background-color: #eee;
+}
+
+.tdbox {
+  overflow: auto;
+  height: 392px;
+}
+
+.tdbox::-webkit-scrollbar {
+  width: 4px;
+  background-color: #ddd;
+}
+
+.tdbox::-webkit-scrollbar-thumb {
+  background-color: #9f9e9e;
+  border-radius: 2px;
+}
+
+.pupopBox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.addUserPupop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  width: 200px;
+  height: 125px;
+  padding-top: 10px;
+  background-color: #ddd;
+  text-align: center;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.pupopInp {
+  width: 100px;
+  padding-left: 2px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.pupopBtn {
+  margin-top: 10px;
+}
+
+.pupopBtn button {
+  margin: 0px 10px;
+  width: 60px;
+}
+
+.tipPupop {
+  position: absolute;
+  top: 2px;
+  left: 153px;
+  width: 133px;
+  height: 33px;
+  color: #fff;
+  text-align: center;
+  line-height: 33px;
+  background-color: rgba(236, 146, 146, 0.8);
+  border-radius: 4px;
+  /* transition: all .5s; */
+  opacity: 0;
+}
+
+.delPupopMask {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.delPupop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150%);
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  background-color: #eee;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.delPupop>p {
+  margin-bottom: 10px;
+}
+
+.delPupop>button {
+  width: 50px;
+  margin: 0 10px;
+}
+
+.daochu {
+  float: right;
+  margin-top: 10px;
+}
