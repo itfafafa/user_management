@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>用户信息表</title>
+  <link rel="stylesheet" href="./style/jd-css-reset.css">
+  <link rel="stylesheet" href="./style/index.css">
+</head>
+
+<body>
+  <div class="outbox">
+    <div class="headeDiv">
+      <h1 class="tableTitile">用户信息表</h1>
+      <a name="excelExport" id="excelExport" onclick="toExcel();" title="导出到excel">
+        <button class="daochu">导出表格</button>
+      </a>
+    </div>
+    <div class="navDiv">
+      <button class="adduser" onclick="batchDel()">批量删除</button>
+      <button class="adduser" onclick="addUserBtn()" style="margin-left: 5px;">新增用户</button>
+      <button style="margin-left: 5px;" onclick="refresh()">刷新表格</button>
+      <div class="seach">
+        <input class="seachInp" type="text" name="seachInp" placeholder="请输入姓名" id="">
+        <button onclick="seachUser()" class="seachBtn">搜索</button>
+      </div>
+    </div>
+    <div class="tableDiv">
+      <table class="userTable" border="1" style="position: absolute;">
+        <tr class="trHeader">
+          <th width="30" height="30" align="center"><input type="checkbox" name="allCheck" id="allCheck" onclick="allCheckOrAllUncheck()"></th>
+          <th width="50" height="30" align="center">序号</th>
+          <th width="110" height="30" align="center">姓名</th>
+          <th width="80" height="30" align="center">年龄</th>
+          <th width="110" height="30" align="center">操作</th>
+        </tr>
+      </table>
+      <div class="tdbox">
+        <table id="userTable" class="userTable" border="1">
+          <tr class="trHeader">
+            <th width="30" height="30" align="center"></th>
+            <th width="50" height="30" align="center">序号</th>
+            <th width="110" height="30" align="center">姓名</th>
+            <th width="80" height="30" align="center">年龄</th>
+            <th width="110" height="30" align="center">操作</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="pupopBox">
+      <div class="addUserPupop">
+        <h5 id="poptitle">新增用户</h5>
+        <form action="javascript:;">
+          <label for="x">姓名</label><input class="pupopInp" type="text" name="x" id="usernameInp">
+          <br>
+          <label for="n">年龄</label><input class="pupopInp" type="number" name="n" id="userageInp">
+          <br>
+          <div class="pupopBtn">
+            <button onclick="addUser()">确定</button>
+            <button onclick="pupopHide()">取消</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="delPupopMask">
+      <div class="delPupop">
+        <p>删除后不可恢复，确定要删除吗？</p>
+        <button class="delSureBtn" onclick="sureDel()">确定</button>
+        <button class="delClose" onclick="delClose()">取消</button>
+      </div>
+    </div>
+    <div class="tipPupop">操 作 成 功 ！</div>
+  </div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/index.js"></script>
+
+</html>
