@@ -3,7 +3,7 @@
 
 ## 前端技术栈
 
-html、css、js、sql 
+html、css、js、jq、sql 
 
 ## 项目运行
 
